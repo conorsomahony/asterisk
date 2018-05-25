@@ -1,0 +1,445 @@
+/*
+
+FDWM1 Assessment 1
+Name: Conor O'Mahony
+ID: STU-00001490
+Date: 14/01/2018
+ 
+Main Stylesheet, including default styles, media queries and responsive grid system.
+*/
+
+/*
+* Responsive Grid System 
+* 
+* Adapted from the following: 
+* http://www.responsivegridsystem.com/ 
+* by Graham Miller, licensed under a Creative Commons Attribution 3.0 License
+* 
+*/
+
+/*  ROW SETUP
+ *  splits up the page horizontally.
+ */
+
+.row {
+    clear: both;
+    padding: 0;
+}
+
+/*  COLUMN SETUP 
+ *  divides the section into columns.
+ */
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+/*  GROUPING 
+ *  solves floating problems, by forcing the section to self clear its children (aka the clearfix hack)
+ */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+/*  GRID OF TWELVE  */
+
+.span_12_of_12 {
+    width: 100%;
+}
+
+.span_11_of_12 {
+    width: 91.53%;
+}
+
+.span_10_of_12 {
+    width: 83.06%;
+}
+
+.span_9_of_12 {
+    width: 74.6%;
+}
+
+.span_8_of_12 {
+    width: 66.13%;
+}
+
+.span_7_of_12 {
+    width: 57.66%;
+}
+
+.span_6_of_12 {
+    width: 49.2%;
+}
+
+.span_5_of_12 {
+    width: 40.73%;
+}
+
+.span_4_of_12 {
+    width: 32.26%;
+}
+
+.span_3_of_12 {
+    width: 23.8%;
+}
+
+.span_2_of_12 {
+    width: 15.33%;
+}
+
+.span_1_of_12 {
+    width: 6.866%;
+}
+
+/* END OF RESPONSIVE GRID SYSTEM */
+
+/* 
+ * My Defaults 
+ */
+
+body {
+    color: white;
+    background-color: rgb(234, 241, 239);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+main {
+    color: darkgray;
+}
+
+main h1 {
+    color: rgb(191, 212, 211);
+}
+
+article h2 {
+    color: rgb(44, 89, 76);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/*
+ * Content styles
+ */
+
+.content {
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+article.content {
+    background-color: white;
+    border: 2px lightgray solid;
+}
+
+img.articleimage {
+    width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    text-align: center;
+}
+
+/*
+ * Specific page elements
+ */
+
+#pageheader {
+    background-image: url(../images/header-image.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#headertext {
+    text-transform: uppercase;
+}
+
+#eventsection {
+    background-image: url(../images/events-image.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#pagefooter {
+    background-color: rgb(15, 36, 34);
+    overflow: hidden;
+    color: rgb(191, 212, 211);
+}
+
+#contactform {
+    border-left: 2px red solid;
+    padding-left: 10px;
+}
+
+/** Events section styling **/
+
+div.event {
+    display: inline-block;
+    width: 70%;
+}
+
+div.eventicon {
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+}
+
+div.eventicon img {
+    text-align: center;
+}
+
+.eventdivider {
+    width: 90%;
+    float: left;
+}
+
+/*
+ * Buttons and Forms
+ */
+
+button.learnbutton {
+    display: block;
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    border: 3px white solid;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+button.learnbutton:hover {
+    background-color: rgba(100, 50, 50, 0.5);
+}
+
+button.submit {
+    text-align: left;
+}
+
+button.onimage {
+    position: relative;
+    top: -100px;
+    margin-bottom: -50px;
+}
+
+input[type=text],
+input[type=email] {
+    background-color: gray;
+    border-radius: 3px;
+    border: 1px white solid;
+    width: 90%;
+}
+
+.bigtext {
+    height: 60px;
+}
+
+#contactform {
+    display: none;
+}
+
+#copyrightnotice {
+    display: block;
+}
+
+/*
+ * NAVIGATION 
+ *
+ * Adapted from the following lesson on Udemy:
+ * https://www.udemy.com/ultimate-web/learn/v4/t/lecture/6786614?start=0 
+ */
+
+nav {
+    width: 100%;
+    max-height: 163px;
+    overflow: hidden;
+}
+
+nav ul {
+    background-color: rgba(100, 50, 50, 0.5);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+img.topnav {
+    display: inherit;
+    float: left;
+}
+
+ul.topnav li {
+    float: right;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 16px;
+    text-transform: uppercase;
+    color: white;
+}
+
+ul.topnav li a:hover {
+    background-color: lightgray;
+    color: white;
+}
+
+/* hamburger icon hidden when not mobile */
+
+ul.topnav li.hamburger {
+    display: none;
+}
+
+/*
+ * MEDIA QUERIES
+ */
+
+/* upto MOBILE (480px) Styles */
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 20px;
+    }
+    #headertext {
+        text-align: center;
+    }
+    /* not shown in mobile view */
+    #footerlists,
+    #eventsection,
+    #headerdescription {
+        display: none;
+    }
+    #contactform {
+        border: none;
+        margin: auto;
+    }
+
+    /* navigation - handle hamburger dropdown menu when clicked */
+    ul.topnav.responsive li.hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive {
+        position: relative;
+        background-color: gainsboro;
+    }
+
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    /*
+     * Responsive Grid
+     */
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_1_of_12,
+    .span_2_of_12,
+    .span_3_of_12,
+    .span_4_of_12,
+    .span_5_of_12,
+    .span_6_of_12,
+    .span_7_of_12,
+    .span_8_of_12,
+    .span_9_of_12,
+    .span_10_of_12,
+    .span_11_of_12,
+    .span_12_of_12 {
+        width: 100%;
+    }
+    /* navigation items */
+    ul.topnav li {
+        display: none;
+    }
+    /* hamburger icon */
+    ul.topnav li.hamburger {
+        display: block;
+        float: right;
+    }
+}
+
+/* TABLET ONLY Styles */
+
+@media only screen and (min-width:481px) and (max-width: 768px) {
+    body,
+    h3 {
+        font-size: 14px;
+    }
+    /* Articles are full width */
+    article.content {
+        width: 100%;
+        margin: 1% 0 1% 0%;
+    }
+    img.articleimage {
+        /* semi-transparent overlay on images for tablet only */
+        opacity: 0.5;
+        object-fit: cover;
+        height: 200px;
+    }
+    #eventsection div.content {
+        width: 98%;
+    }
+}
+
+/* MOBILE, TABLET, DESKTOP Styles */
+
+@media only screen and (max-width:1440px) {
+    #pageheader {
+        background-size: auto;
+    }
+    #contactform {
+        display: inherit;
+    }
+    #copyrightnotice {
+        display: none;
+    }
+}
+
+/* DESKTOP ONLY */
+
+@media only screen and (min-width:769px) and (max-width:1440px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* DESKTOP HD and bigger Styles */
+
+@media only screen and (min-width:1440px) {
+    #contactform {
+        display: none;
+    }
+    #copyrightnotice {
+        display: block;
+    }
+}

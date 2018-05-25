@@ -1,0 +1,172 @@
+<!--
+
+FDWM1 Assessment 1
+Name: Conor O'Mahony
+ID: STU-00001490
+Date: 14/01/2018
+
+HTML for responsive webpage.
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asterisk - Today's Solutions Tomorrow</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--link rel="stylesheet" href="./css/reset.css"-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header  -->
+    <header role="banner" id="pageheader">
+
+        <!-- Navigation -->
+        <nav class="row group" role="navigation">
+            <img src="./images/logo@2x.png" alt="Asterisk logo" class="topnav">
+            <ul class="topnav" id="dropdownclick">
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#news">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li class="hamburger"><a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <div class="row group">
+            <div class="col span_12_of_12 content">
+                <h1 id="headertext">Today's Solution Tomorrow</h1>
+                <h2 id="headerdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci magni nisi delectus neque laborum, dolorem dolor doloremque rerum tempora officia sequi iusto at culpa porro laboriosam id unde, ad.</h2>
+                <button type="button" class="learnbutton">LEARN MORE</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main - Articles-->
+    <main class="row group" role="main">
+        <article class="col span_4_of_12 content">
+            <img src="./images/today.jpg" alt="Today Image" class="articleimage">
+            <button class="learnbutton onimage">LEARN MORE</button>
+            <h2>Today</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci magni nisi delectus neque laborum, dolorem dolor doloremque rerum tempora officia sequi iusto at culpa porro laboriosam id unde, ad.</p>
+        </article>
+        <article class="col span_4_of_12 content">
+            <img src="./images/solutions.jpg" alt="Solutions Image" class="articleimage">
+            <button class="learnbutton onimage">LEARN MORE</button>
+            <h2>Solutions</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci magni nisi delectus neque laborum, dolorem dolor doloremque rerum tempora officia sequi iusto at culpa porro laboriosam id unde, ad.</p>
+        </article>
+        <article class="col span_4_of_12 content">
+            <img src="./images/tomorrow.jpg" alt="Tomorrow Image" class="articleimage">
+            <button class="learnbutton onimage">LEARN MORE</button>
+            <h2>Tomorrow</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci magni nisi delectus neque laborum, dolorem dolor doloremque rerum tempora officia sequi iusto at culpa porro laboriosam id unde, ad.</p>
+        </article>
+    </main>
+
+    <!-- Aside - Events -->
+    <aside class="row group" id="eventsection">
+        <div class="col span_8_of_12 content">
+            <h2>Tomorrow</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci magni nisi delectus neque laborum, dolorem dolor doloremque rerum tempora officia sequi iusto at culpa porro laboriosam id unde, ad.</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam distinctio est totam tenetur cum, eius atque libero consectetur modi nisi qui incidunt consequatur voluptatibus assumenda, dicta officia dignissimos ipsa.
+        </div>
+        <div class="col span_4_of_12 content">
+            <div class="event">
+                <h3>FIRST EVENT</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+            <div class="eventicon">
+                <img src="./images/calendar.png" alt="Calendar icon" />
+            </div>
+            <hr class="eventdivider">
+            <div class="event">
+                <h3>SECOND EVENT</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+            <div class="eventicon">
+                <img src="./images/calendar.png" alt="Calendar icon" />
+            </div>
+            <hr class="eventdivider">
+            <div class="event">
+                <h3>THIRD EVENT</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+            <div class="eventicon">
+                <img src="./images/calendar.png" alt="Calendar icon" />
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="row group" id="pagefooter">
+        <div class="col span_7_of_12 content" id="footerlists">
+            <div class="row group">
+                <div class="col span_4_of_12">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li>Sub 1</li>
+                        <li>Sub 2</li>
+                        <li>Sub 3</li>
+                    </ul>
+                </div>
+                <div class="col span_4_of_12">
+                    <h3>Products</h3>
+                    <ul>
+                        <li>Sub 1</li>
+                        <li>Sub 2</li>
+                        <li>Sub 3</li>
+                    </ul>
+                </div>
+                <div class="col span_4_of_12">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Sub 1</li>
+                        <li>Sub 2</li>
+                        <li>Sub 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col span_5_of_12 content">
+            <!-- Contact Form -->
+            <div id="contactform">
+                <form action="post">
+                    <h3>Send message</h3>
+                    <label for="message">Message</label><br>
+                    <input type="text" name="message" id="message" class="bigtext" required><br>
+                    <label for="myemail">Mail</label><br>
+                    <input type="email" name="myemail" id="myemail" /><br>
+                    <button type="button" class="learnbutton">Submit</button>
+                </form>
+            </div>
+            <div id="copyrightnotice">
+                <h3>Copyright</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima laboriosam, libero unde aliquid cupiditate et vitae modi, nostrum corporis, quidem sint cum assumenda praesentium hic dolore enim voluptates ipsam soluta.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- small script for handling minimal functionality for the dropdown menu.
+    Opted not to include this as a separate file as this is primarily HTML and CSS assignment.
+        
+    Adapted from the following lesson on Udemy:
+    https://www.udemy.com/ultimate-web/learn/v4/t/lecture/6786614?start=0 
+-->
+    <script>
+        function dropDownMenu() {
+            var x = document.getElementById("dropdownclick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                /* change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
